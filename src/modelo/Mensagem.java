@@ -2,38 +2,37 @@
 package modelo;
 
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-
+import javax.persistence.Cacheable;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity 
 @Table(name="mensagem_20192370039")
+@Cacheable(false)
 public class Mensagem {
 	@Id 
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
     private int id;
 	
-    private String datahora;
+	@Column(columnDefinition="TIMESTAMP")
+    private LocalDateTime datahora;
     
     @ManyToOne
     private Usuario criador;
     
     private String texto;	//formato "yyyyMMdd"
     
-    public Mensagem() {
-    	
-    }
+    public Mensagem() {}
                 
     public Mensagem(Usuario criador, String texto) {
 		this.criador = criador;
 		this.texto = texto;
-		this.datahora = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd HH:mm:ss"));
+		this.datahora = LocalDateTime.now();
 	}
                            
     public int getId() {
@@ -51,10 +50,10 @@ public class Mensagem {
         this.texto = texto;
     }
 
-    public String getData() {
+    public LocalDateTime getData() {
         return datahora;
     }
-    public void setData(String data) {
+    public void setData(LocalDateTime data) {
         this.datahora = data;
     }
     

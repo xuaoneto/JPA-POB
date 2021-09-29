@@ -128,7 +128,7 @@ public class TelaLogs {
 			model.addColumn("Datahora");
 			model.addColumn("Nome");
 			for(Log log : lista)
-					model.addRow(new String[]{ log.getDatahora(), log.getNome() });
+					model.addRow(new String[]{ log.getDatahora().toString(), log.getNome() });
 
 			table.setModel(model);
 		}

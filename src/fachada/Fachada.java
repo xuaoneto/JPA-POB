@@ -79,17 +79,17 @@ public class Fachada {
 
 	public static Usuario criarUsuario(String nome, String senha) throws  Exception{
 		// nao precisa estar logado
-		DAO.begin();	
-		Usuario u = daousuario.read(nome+"/"+senha);	
-		if(u != null) {
+		DAO.begin();
+		Usuario usuario = daousuario.read(nome+"/"+senha);	
+		if(usuario != null) {
 			DAO.rollback();	
 			throw new Exception("criar usuario - usuario existente:" + nome);
 		}
 
-		u = new Usuario(nome+"/"+senha);
-		daousuario.create(u);		
+		usuario = new Usuario(nome+"/"+senha);
+		daousuario.create(usuario);		
 		DAO.commit();
-		return u;
+		return usuario;
 	}
 
 
@@ -172,30 +172,26 @@ public class Fachada {
 		 */
 	}
 
-	public static void apagarMensagens(int... ids) throws  Exception{
+	public static void apagarMensagens(int id) throws  Exception{
 		DAO.begin();
-		if (getLogado() != null) {
+		if (usuariologado != null) {
 			List <Mensagem> msgs = daomensagem.readAll();
-			for(int k=0; k<ids.length; k++) {
-				boolean apagado = false;
-				int x = ids[k];
-				
-				for(int i=0; i<msgs.size(); i++) {
+			for (int k = 0; k < msgs.size(); k++) {
+			
+				if(msgs.get(k).getId() == id) {
 					
-					if (x == msgs.get(i).getId()) {
-						if(msgs.get(i).getCriador().getNome().equals(usuariologado.getNome())) {
-							usuariologado.delMensagem(msgs.get(i));
-							daomensagem.delete(msgs.get(i));
-							apagado = true;
-						}
+					if (Fachada.getLogado().getNome().equals(msgs.get(k).getCriador().getNome())) {
+						daomensagem.delete(msgs.get(k));
+						DAO.commit();
+						
+					}else {
+						DAO.rollback();
+						throw new Exception("Você so pode apagar mensagens suas.");
 					}
 				}
-				if(!apagado) {
-					DAO.rollback();
-					throw new Exception("A mensagem não pode ser excluida.");
-				}
+			
 			}
-			DAO.commit();
+			
 		}else {
 			DAO.rollback();
 			throw new Exception("O usuário precisa estar logado.");

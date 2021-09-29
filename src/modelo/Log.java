@@ -1,12 +1,9 @@
 package modelo;
 
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -16,20 +13,18 @@ public class Log {
 	
 	@Id 
 	@Column(columnDefinition="TIMESTAMP")
-	private String datahora;
+	private LocalDateTime datahora;
 	
 	private String nome;
 	
-	public Log() {
-		
-	}
+	public Log() {}
 	
 	public Log(String nome) {
 		this.nome = nome;
-		this.datahora = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyMMdd HH:mm:ss"));
+		this.datahora = LocalDateTime.now();
 	}
 	
-	public String getDatahora() {
+	public LocalDateTime getDatahora() {
 		return datahora;
 	}
 

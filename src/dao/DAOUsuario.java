@@ -7,6 +7,7 @@ import javax.persistence.TypedQuery;
 import modelo.Usuario;
 
 public class DAOUsuario extends DAO <Usuario>{
+	
 	@Override
 	public Usuario read(Object chave) {
 		String nomesenha = (String) chave;

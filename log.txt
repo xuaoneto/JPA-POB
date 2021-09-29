@@ -1,47 +1,521 @@
-[EL Fine]: server: 2021-09-27 22:55:11.55--Thread(Thread[AWT-EventQueue-0,6,main])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
-[EL Config]: metadata: 2021-09-27 22:55:11.727--ServerSession(2048244223)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class modelo.Mensagem] is set to [FIELD].
-[EL Config]: metadata: 2021-09-27 22:55:11.765--ServerSession(2048244223)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the many to one mapping element [field criador] is being defaulted to: class modelo.Usuario.
-[EL Config]: metadata: 2021-09-27 22:55:11.766--ServerSession(2048244223)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class modelo.Log] is set to [FIELD].
-[EL Config]: metadata: 2021-09-27 22:55:11.767--ServerSession(2048244223)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class modelo.Usuario] is set to [FIELD].
-[EL Config]: metadata: 2021-09-27 22:55:11.773--ServerSession(2048244223)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the one to many mapping element [field mensagens] is being defaulted to: class modelo.Mensagem.
-[EL Config]: metadata: 2021-09-27 22:55:11.774--ServerSession(2048244223)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class modelo.Administrador] is set to [FIELD].
-[EL Config]: metadata: 2021-09-27 22:55:11.774--ServerSession(2048244223)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class modelo.Mensagem] is being defaulted to: Mensagem.
-[EL Config]: metadata: 2021-09-27 22:55:11.796--ServerSession(2048244223)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [texto] is being defaulted to: TEXTO.
-[EL Config]: metadata: 2021-09-27 22:55:11.798--ServerSession(2048244223)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [id] is being defaulted to: ID.
-[EL Config]: metadata: 2021-09-27 22:55:11.798--ServerSession(2048244223)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [datahora] is being defaulted to: DATAHORA.
-[EL Config]: metadata: 2021-09-27 22:55:11.799--ServerSession(2048244223)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class modelo.Log] is being defaulted to: Log.
-[EL Config]: metadata: 2021-09-27 22:55:11.799--ServerSession(2048244223)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [nome] is being defaulted to: NOME.
-[EL Config]: metadata: 2021-09-27 22:55:11.799--ServerSession(2048244223)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [datahora] is being defaulted to: DATAHORA.
-[EL Config]: metadata: 2021-09-27 22:55:11.8--ServerSession(2048244223)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class modelo.Administrador] is being defaulted to: Administrador.
-[EL Config]: metadata: 2021-09-27 22:55:11.8--ServerSession(2048244223)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class modelo.Usuario] is being defaulted to: Usuario.
-[EL Config]: metadata: 2021-09-27 22:55:11.801--ServerSession(2048244223)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [nomesenha] is being defaulted to: NOMESENHA.
-[EL Config]: metadata: 2021-09-27 22:55:11.801--ServerSession(2048244223)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [ativo] is being defaulted to: ATIVO.
-[EL Config]: metadata: 2021-09-27 22:55:11.802--ServerSession(2048244223)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the one to many mapping element [field mensagens] is being defaulted to: class modelo.Mensagem.
-[EL Config]: metadata: 2021-09-27 22:55:11.803--ServerSession(2048244223)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [nomesenha] is being defaulted to: NOMESENHA.
-[EL Config]: metadata: 2021-09-27 22:55:11.803--ServerSession(2048244223)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [ativo] is being defaulted to: ATIVO.
-[EL Config]: metadata: 2021-09-27 22:55:11.804--ServerSession(2048244223)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [email] is being defaulted to: EMAIL.
-[EL Config]: metadata: 2021-09-27 22:55:11.816--ServerSession(2048244223)--Thread(Thread[AWT-EventQueue-0,6,main])--The primary key column name for the mapping element [field criador] is being defaulted to: NOMESENHA.
-[EL Config]: metadata: 2021-09-27 22:55:11.816--ServerSession(2048244223)--Thread(Thread[AWT-EventQueue-0,6,main])--The foreign key column name for the mapping element [criador] is being defaulted to: CRIADOR_NOMESENHA.
-[EL Info]: 2021-09-27 22:55:11.934--ServerSession(2048244223)--Thread(Thread[AWT-EventQueue-0,6,main])--EclipseLink, version: Eclipse Persistence Services - 2.7.8.v20201217-ecdf3c32c4
-[EL Fine]: connection: 2021-09-27 22:55:12.439--Thread(Thread[AWT-EventQueue-0,6,main])--Detected database platform: org.eclipse.persistence.platform.database.PostgreSQLPlatform
-[EL Fine]: connection: 2021-09-27 22:55:12.45--ServerSession(2048244223)--Connection(1662400811)--Thread(Thread[AWT-EventQueue-0,6,main])--connecting(DatabaseLogin(
+[EL Fine]: server: 2021-09-28 22:37:14.866--Thread(Thread[AWT-EventQueue-0,6,main])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
+[EL Warning]: metadata: 2021-09-28 22:37:14.956--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The java.lang.Object class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+java.lang.IllegalArgumentException: Unsupported class file major version 61
+[EL Severe]: metadata: 2021-09-28 22:37:14.959--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The java.lang.Object class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
+[EL Config]: metadata: 2021-09-28 22:37:14.977--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class modelo.Mensagem] is set to [FIELD].
+[EL Warning]: metadata: 2021-09-28 22:37:14.981--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The java.lang.String class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+java.lang.IllegalArgumentException: Unsupported class file major version 61
+[EL Severe]: metadata: 2021-09-28 22:37:14.981--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The java.lang.String class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
+[EL Config]: metadata: 2021-09-28 22:37:14.992--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the many to one mapping element [field criador] is being defaulted to: class modelo.Usuario.
+[EL Warning]: metadata: 2021-09-28 22:37:14.992--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The java.time.LocalDateTime class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+java.lang.IllegalArgumentException: Unsupported class file major version 61
+[EL Severe]: metadata: 2021-09-28 22:37:14.993--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The java.time.LocalDateTime class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
+[EL Config]: metadata: 2021-09-28 22:37:14.994--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class modelo.Log] is set to [FIELD].
+[EL Config]: metadata: 2021-09-28 22:37:14.995--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class modelo.Usuario] is set to [FIELD].
+[EL Warning]: metadata: 2021-09-28 22:37:14.995--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The java.util.List class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+java.lang.IllegalArgumentException: Unsupported class file major version 61
+[EL Severe]: metadata: 2021-09-28 22:37:14.996--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The java.util.List class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
+[EL Config]: metadata: 2021-09-28 22:37:14.999--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the one to many mapping element [field mensagens] is being defaulted to: class modelo.Mensagem.
+[EL Warning]: metadata: 2021-09-28 22:37:14.999--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The java.util.Collection class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+java.lang.IllegalArgumentException: Unsupported class file major version 61
+[EL Severe]: metadata: 2021-09-28 22:37:15.0--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The java.util.Collection class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
+[EL Warning]: metadata: 2021-09-28 22:37:15.0--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The java.lang.Iterable class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+java.lang.IllegalArgumentException: Unsupported class file major version 61
+[EL Severe]: metadata: 2021-09-28 22:37:15.001--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The java.lang.Iterable class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
+[EL Config]: metadata: 2021-09-28 22:37:15.001--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class modelo.Administrador] is set to [FIELD].
+[EL Config]: metadata: 2021-09-28 22:37:15.001--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class modelo.Mensagem] is being defaulted to: Mensagem.
+[EL Config]: metadata: 2021-09-28 22:37:15.011--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [texto] is being defaulted to: TEXTO.
+[EL Config]: metadata: 2021-09-28 22:37:15.012--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2021-09-28 22:37:15.012--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [datahora] is being defaulted to: DATAHORA.
+[EL Config]: metadata: 2021-09-28 22:37:15.013--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class modelo.Log] is being defaulted to: Log.
+[EL Config]: metadata: 2021-09-28 22:37:15.013--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [nome] is being defaulted to: NOME.
+[EL Config]: metadata: 2021-09-28 22:37:15.013--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [datahora] is being defaulted to: DATAHORA.
+[EL Config]: metadata: 2021-09-28 22:37:15.014--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class modelo.Administrador] is being defaulted to: Administrador.
+[EL Config]: metadata: 2021-09-28 22:37:15.014--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class modelo.Usuario] is being defaulted to: Usuario.
+[EL Config]: metadata: 2021-09-28 22:37:15.014--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [nomesenha] is being defaulted to: NOMESENHA.
+[EL Config]: metadata: 2021-09-28 22:37:15.015--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [ativo] is being defaulted to: ATIVO.
+[EL Config]: metadata: 2021-09-28 22:37:15.015--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the one to many mapping element [field mensagens] is being defaulted to: class modelo.Mensagem.
+[EL Config]: metadata: 2021-09-28 22:37:15.015--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [nomesenha] is being defaulted to: NOMESENHA.
+[EL Config]: metadata: 2021-09-28 22:37:15.016--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [ativo] is being defaulted to: ATIVO.
+[EL Config]: metadata: 2021-09-28 22:37:15.016--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [email] is being defaulted to: EMAIL.
+[EL Config]: metadata: 2021-09-28 22:37:15.024--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The primary key column name for the mapping element [field criador] is being defaulted to: NOMESENHA.
+[EL Config]: metadata: 2021-09-28 22:37:15.024--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--The foreign key column name for the mapping element [criador] is being defaulted to: CRIADOR_NOMESENHA.
+[EL Info]: 2021-09-28 22:37:15.099--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--EclipseLink, version: Eclipse Persistence Services - 2.7.8.v20201217-ecdf3c32c4
+[EL Fine]: connection: 2021-09-28 22:37:15.404--Thread(Thread[AWT-EventQueue-0,6,main])--Detected database platform: org.eclipse.persistence.platform.database.PostgreSQLPlatform
+[EL Fine]: connection: 2021-09-28 22:37:15.409--ServerSession(998901506)--Connection(290044244)--Thread(Thread[AWT-EventQueue-0,6,main])--connecting(DatabaseLogin(
 	platform=>PostgreSQLPlatform
 	user name=> "postgres"
 	datasource URL=> "jdbc:postgresql://localhost:5432/Mensagens"
 ))
-[EL Config]: connection: 2021-09-27 22:55:12.585--ServerSession(2048244223)--Connection(436919886)--Thread(Thread[AWT-EventQueue-0,6,main])--Connected: jdbc:postgresql://localhost:5432/Mensagens
+[EL Config]: connection: 2021-09-28 22:37:15.451--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--Connected: jdbc:postgresql://localhost:5432/Mensagens
 	User: postgres
-	Database: PostgreSQL  Version: 13.3
+	Database: PostgreSQL  Version: 13.1
 	Driver: PostgreSQL JDBC Driver  Version: 42.2.19
-[EL Fine]: connection: 2021-09-27 22:55:12.627--ServerSession(2048244223)--Thread(Thread[AWT-EventQueue-0,6,main])--/file:/C:/Users/diego/Downloads/JPA/4Talk-jpa/target/classes/_eclipselink-postgres_url=jdbc:postgresql://localhost:5432/Mensagens login successful
-[EL Fine]: sql: 2021-09-27 22:55:12.674--ServerSession(2048244223)--Connection(436919886)--Thread(Thread[AWT-EventQueue-0,6,main])--CREATE TABLE administrador_20192370039 (NOMESENHA VARCHAR(255) NOT NULL, ATIVO BOOLEAN, EMAIL VARCHAR(255), PRIMARY KEY (NOMESENHA))
-[EL Fine]: sql: 2021-09-27 22:55:12.883--ServerSession(2048244223)--Connection(436919886)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039 WHERE (NOMESENHA = ?)
+[EL Fine]: connection: 2021-09-28 22:37:15.481--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--/file:/C:/Users/João Neto/Desktop/Projetos/JPA/4Talk-jpa/target/classes/_eclipselink-postgres_url=jdbc:postgresql://localhost:5432/Mensagens login successful
+[EL Fine]: sql: 2021-09-28 22:37:15.638--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039 WHERE (NOMESENHA = ?)
 	bind => [admin/123]
-[EL Fine]: sql: 2021-09-27 22:55:12.886--ServerSession(2048244223)--Connection(436919886)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039 WHERE (NOMESENHA = ?)
-	bind => [admin/123]
-[EL Fine]: connection: 2021-09-27 22:55:13.939--ServerSession(2048244223)--Connection(436919886)--Thread(Thread[AWT-EventQueue-0,6,main])--disconnect
-[EL Fine]: connection: 2021-09-27 22:55:13.94--ServerSession(2048244223)--Thread(Thread[AWT-EventQueue-0,6,main])--/file:/C:/Users/diego/Downloads/JPA/4Talk-jpa/target/classes/_eclipselink-postgres_url=jdbc:postgresql://localhost:5432/Mensagens logout successful
-[EL Fine]: connection: 2021-09-27 22:55:13.94--ServerSession(2048244223)--Connection(1662400811)--Thread(Thread[AWT-EventQueue-0,6,main])--disconnect
-79170)--Thread(Thread[AWT-EventQueue-0,6,main])--disconnect
-[EL Fine]: connection: 2021-09-27 22:55:12.866--ServerSession(2048244223)--Thread(Thread[AWT-EventQueue-0,6,main])--/file:/C:/Users/diego/Downloads/JPA/4Talk-jpa/target/classes/_eclipselink-postgres_url=jdbc:postgresql://localhost:5432/Mensagens logout successful
-[EL Fine]: connection: 2021-09-27 22:55:12.866--ServerSession(2048244223)--Connection(518668650)--Thread(Thread[AWT-EventQueue-0,6,main])--disconnect
+[EL Fine]: sql: 2021-09-28 22:37:40.046--ClientSession(761103106)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--INSERT INTO logs_20192370039 (DATAHORA, NOME) VALUES (?, ?)
+	bind => [2021-09-28T22:37:40.044617400, admin - login]
+[EL Fine]: sql: 2021-09-28 22:37:46.538--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:37:46.54--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:37:46.544--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:37:46.545--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:37:53.249--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039 WHERE (NOMESENHA = ?)
+	bind => []
+[EL Fine]: sql: 2021-09-28 22:37:53.25--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039 WHERE (NOMESENHA = ?)
+	bind => []
+[EL Fine]: sql: 2021-09-28 22:37:54.509--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:37:54.51--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:38:02.511--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:38:02.512--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:38:03.217--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039 WHERE (NOMESENHA = ?)
+	bind => [Joao]
+[EL Fine]: sql: 2021-09-28 22:38:03.218--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039 WHERE (NOMESENHA = ?)
+	bind => [Joao]
+[EL Fine]: sql: 2021-09-28 22:38:10.511--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:38:10.512--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:38:12.657--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039 WHERE (NOMESENHA = ?)
+	bind => [Joao]
+[EL Fine]: sql: 2021-09-28 22:38:12.658--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039 WHERE (NOMESENHA = ?)
+	bind => [Joao]
+[EL Fine]: sql: 2021-09-28 22:38:18.512--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:38:18.513--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:38:26.512--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:38:26.513--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:38:34.513--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:38:34.514--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:38:42.515--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:38:42.516--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:38:50.516--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:38:50.517--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:38:58.517--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:38:58.518--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:39:10.994--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:39:10.995--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:39:14.519--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:39:14.52--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:39:22.521--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:39:22.522--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:39:30.327--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039 WHERE (NOMESENHA = ?)
+	bind => [Joao/]
+[EL Fine]: sql: 2021-09-28 22:39:30.328--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039 WHERE (NOMESENHA = ?)
+	bind => [Joao/]
+[EL Fine]: sql: 2021-09-28 22:39:30.522--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:39:30.523--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:39:35.993--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:39:35.994--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:39:35.996--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:39:35.996--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:39:38.523--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:39:38.524--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:39:43.968--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:39:43.969--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:39:46.523--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:39:46.524--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:39:51.97--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:39:51.971--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:39:54.524--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:39:54.525--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:39:59.97--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:39:59.971--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:40:02.524--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:40:02.525--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:40:07.971--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:40:07.972--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:40:20.152--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:40:20.153--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:40:20.154--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:40:20.155--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:40:23.973--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:40:23.974--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:40:26.527--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:40:26.528--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:40:31.974--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:40:31.975--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:40:34.529--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:40:34.53--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:40:39.975--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:40:39.976--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:40:42.531--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:40:42.532--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:40:47.975--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:40:47.976--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:40:50.531--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:40:50.532--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:40:55.976--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:40:55.977--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:40:57.155--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039 WHERE (NOMESENHA = ?)
+	bind => [/]
+[EL Fine]: sql: 2021-09-28 22:40:57.156--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039 WHERE (NOMESENHA = ?)
+	bind => [/]
+[EL Fine]: sql: 2021-09-28 22:40:58.533--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:40:58.534--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:03.907--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:03.908--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:03.911--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:03.912--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:03.978--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:03.979--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:06.534--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:06.535--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:07.51--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:07.537--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:11.407--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:11.422--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:11.879--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:11.88--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:11.978--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:11.979--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:14.535--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:14.536--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:15.495--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:16.39--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:19.879--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:19.88--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:19.98--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:19.981--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:21.391--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:22.535--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:22.536--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:23.497--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:26.392--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:27.879--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:27.881--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:27.981--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:27.982--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:30.536--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:30.537--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:31.393--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:31.497--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:35.881--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:35.882--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:35.983--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:35.984--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:36.394--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:38.537--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:38.538--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:39.498--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:41.395--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:43.882--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:43.883--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:43.983--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:43.984--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:46.396--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:46.538--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:46.539--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:47.498--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:51.396--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:51.883--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:51.884--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:51.985--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:51.986--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:54.538--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:54.539--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:55.499--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:56.397--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:59.883--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:59.884--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:59.985--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:41:59.986--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:01.399--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:02.539--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:02.541--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:03.5--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:06.399--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:07.885--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:07.886--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:07.987--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:07.988--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:10.54--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:10.541--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:11.4--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:11.5--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:15.885--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:15.886--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:15.988--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:15.989--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:16.401--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:18.541--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:18.542--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:19.501--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:21.402--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:23.887--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:23.888--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:23.989--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:23.99--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:26.402--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:26.543--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:26.544--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:27.501--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:31.404--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:31.888--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:31.889--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:31.99--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:31.991--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:34.543--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:34.544--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:35.501--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:36.405--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:39.889--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:39.89--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:39.991--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:39.992--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:41.405--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:42.545--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:42.546--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:43.503--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:46.407--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:47.889--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:47.89--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:47.991--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:47.992--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:50.546--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:50.547--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:51.408--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:51.503--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:55.889--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:55.89--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:55.992--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:55.993--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:56.41--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:58.547--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:58.548--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:42:59.505--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:01.412--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:03.891--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:03.892--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:03.993--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:03.994--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:06.413--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:06.549--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:06.549--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:07.505--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:11.414--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:11.893--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:11.894--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:11.994--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:11.995--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:14.551--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:14.552--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:15.505--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:16.415--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:19.893--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:19.894--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:19.995--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:19.996--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:21.417--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:22.553--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:22.554--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:23.505--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:26.418--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:27.894--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:27.895--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:27.995--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:27.996--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:30.554--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:30.555--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:31.419--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:31.506--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:35.896--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:35.897--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:35.996--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:35.997--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:36.421--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:38.556--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:38.557--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:39.506--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:41.422--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:43.897--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:43.898--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:43.997--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:43.998--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:46.423--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:46.556--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:46.557--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:47.506--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:51.423--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:51.898--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:51.898--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:51.998--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:51.999--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:54.558--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:54.559--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:55.508--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:56.425--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:59.899--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:43:59.9--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:00.0--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:00.001--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:01.427--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:02.56--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:02.561--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:03.51--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:06.429--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:07.899--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:07.9--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:08.001--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:08.002--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:10.561--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:10.562--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:11.429--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:11.51--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:15.901--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:15.902--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:16.003--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:16.004--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:16.43--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:18.562--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:18.563--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:19.511--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:21.43--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:23.901--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:23.902--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:24.004--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:24.005--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:26.432--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:26.564--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:26.564--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:27.512--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:31.434--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:31.903--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:31.903--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:32.005--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:32.006--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:34.565--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:34.566--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:35.513--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:36.436--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:39.903--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:39.904--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:40.005--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:40.006--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:41.437--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:42.566--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:42.567--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:43.514--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:46.439--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:47.905--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:47.906--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:48.007--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:48.007--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:50.567--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:50.567--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:51.44--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:51.515--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:55.906--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:55.907--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:56.007--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:56.008--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:56.441--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:58.568--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:58.569--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:44:59.515--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:01.443--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:03.907--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:03.908--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:04.009--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:04.01--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:06.443--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:06.569--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:06.569--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:07.517--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:11.443--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:11.909--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:11.91--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:12.011--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:12.012--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:14.569--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:14.57--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:15.517--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:16.444--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:19.911--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:19.912--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:20.012--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:20.012--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:21.445--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:22.57--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:22.57--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:23.518--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:26.446--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:27.912--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:27.913--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:28.013--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:28.013--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:30.57--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:30.571--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:31.447--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:31.519--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:35.913--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:35.914--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:36.014--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:36.014--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:36.447--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:38.571--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:38.572--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:39.519--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:41.449--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:43.915--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:43.916--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:44.015--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:44.015--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:46.451--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:46.572--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:46.572--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:47.52--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:51.451--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:51.916--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:51.916--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:52.016--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:52.017--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:54.574--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:54.574--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:55.52--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:56.452--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:59.917--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:45:59.918--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:00.017--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:00.018--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:01.453--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:02.576--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:02.576--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:03.521--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:06.455--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:07.919--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:07.919--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:08.018--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:08.018--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:10.577--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:10.578--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:11.455--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:11.521--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:15.92--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:15.92--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:16.019--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:16.02--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:16.456--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:18.578--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:18.578--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:19.522--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:21.457--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:23.92--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:23.92--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:24.021--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:24.021--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:26.459--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:26.58--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:26.58--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:27.523--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATAHORA, TEXTO, CRIADOR_NOMESENHA FROM mensagem_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:31.46--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT DATAHORA, NOME FROM logs_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:31.922--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:31.922--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:32.021--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO FROM usuario_20192370039
+[EL Fine]: sql: 2021-09-28 22:46:32.021--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT NOMESENHA, ATIVO, EMAIL FROM administrador_20192370039
+[EL Fine]: connection: 2021-09-28 22:46:32.267--ServerSession(998901506)--Connection(1157774114)--Thread(Thread[AWT-EventQueue-0,6,main])--disconnect
+[EL Fine]: connection: 2021-09-28 22:46:32.268--ServerSession(998901506)--Thread(Thread[AWT-EventQueue-0,6,main])--/file:/C:/Users/João Neto/Desktop/Projetos/JPA/4Talk-jpa/target/classes/_eclipselink-postgres_url=jdbc:postgresql://localhost:5432/Mensagens logout successful
+[EL Fine]: connection: 2021-09-28 22:46:32.268--ServerSession(998901506)--Connection(290044244)--Thread(Thread[AWT-EventQueue-0,6,main])--disconnect

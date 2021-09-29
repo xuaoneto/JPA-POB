@@ -2,7 +2,6 @@
 package modelo;
 
 import javax.persistence.Entity;
-import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
@@ -11,9 +10,7 @@ public class Administrador extends Usuario {
 	
 	private String email;			
 
-	public Administrador() {
-		
-	}
+	public Administrador() {}
 	
 	public Administrador(String nomesenha, String email) {
 		super(nomesenha);

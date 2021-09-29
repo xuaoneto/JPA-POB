@@ -5,12 +5,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
-import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
@@ -27,9 +24,7 @@ public class Usuario {
 	
 	private boolean ativo = true;
 
-	public Usuario() {
-		
-	}
+	public Usuario() {}
 	
 	public Usuario(String nomesenha) {
 		this.nomesenha = nomesenha;
